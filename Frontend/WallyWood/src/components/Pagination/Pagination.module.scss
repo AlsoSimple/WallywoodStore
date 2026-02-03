@@ -1,0 +1,56 @@
+@use '../../styles/_globals' as globals;
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageItem {
+  display: flex;
+}
+
+.pageLink {
+  padding: 0.5rem 0.75rem;
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-gray);
+  background-color: white;
+  color: var(--color-dark);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-weight: 500;
+
+  &:hover {
+    background-color: var(--color-secondary);
+    border-color: var(--color-accent);
+  }
+}
+
+.active {
+  .pageLink {
+    background-color: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+  }
+}
+
+.disabled {
+  .pageLink {
+    opacity: 0.5;
+    cursor: not-allowed;
+    
+    &:hover {
+      background-color: white;
+      border-color: var(--color-gray);
+    }
+  }
+}

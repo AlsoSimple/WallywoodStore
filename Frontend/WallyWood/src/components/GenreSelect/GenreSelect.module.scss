@@ -1,0 +1,36 @@
+@use '../../styles/_globals' as globals;
+
+.genreStyle {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  li {
+    list-style-type: none;
+    padding: 0.5rem 0;
+    color: var(--color-accent);
+    cursor: pointer;
+    font-size: 0.95rem;
+    line-height: 0.75rem;
+    transition: opacity 0.2s ease;
+    
+    &:hover {
+      opacity: 0.7;
+    }
+    
+    &::before {
+      content: '';
+      margin-right: 0.5rem;
+    }
+    
+    &.active {
+      font-weight: 700;
+      color: var(--color-dark);
+      &::before {
+        content: '▶';
+        font-size: 0.6rem;
+        vertical-align: middle;
+      }
+    }
+  }
+}

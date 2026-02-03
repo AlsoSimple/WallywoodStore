@@ -1,0 +1,18 @@
+@use '../../styles/_globals' as globals;
+
+.button {
+  padding: 0.6rem 1.5rem;
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+  border: solid 1px var(--color-dark);
+  border-radius: 2px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: var(--color-accent);
+    color: white;
+  }
+}

@@ -1,0 +1,24 @@
+:root {
+  --color-primary: #5C1F06;
+  --color-background: #F9F9F9;
+  --color-shadow: #00000029;
+  --color-accent: #D97852;
+  --color-secondary: #D1B3A7;
+  --color-dark: #524641;
+  --color-gray: #CCCCCC;
+  --color-black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-primary);
+  color: var(--color-black);
+}

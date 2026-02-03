@@ -1,0 +1,103 @@
+.details {
+  padding: 2rem 0;
+}
+
+.contentWrapper {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  align-items: start;
+
+  @media (max-width: 968px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sidebar {
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+}
+
+.posterDetails {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+  margin: 0;
+  align-items: stretch;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.imageContainer {
+  width: 100%;
+  
+  img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  height: 100%;
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+    color: #555;
+  }
+}
+
+.description {
+  line-height: 1.5;
+  color: #666;
+  font-size: 0.95rem;
+  
+  p {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+.specifications {
+  p {
+    margin: 0.25rem 0;
+    color: #666;
+    font-size: 0.95rem;
+    
+    strong {
+      color: #333;
+      font-weight: 500;
+    }
+  }
+}
+
+.purchaseSection {
+  margin-top: auto;
+}
+
+.stockInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-left: auto;
+}
+
+.checkmark {
+  color: #28a745;
+  font-size: 20px;
+}

@@ -1,0 +1,51 @@
+@use '../../styles/_globals' as globals;
+
+.about {
+  background-color: var(--color-background-light);
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.textContent {
+  flex: 1;
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--color-dark);
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.imageContent {
+  flex-shrink: 0;
+  width: 400px;
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  
+  .imageContent {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
